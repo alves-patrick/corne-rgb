@@ -1,0 +1,5 @@
+&led_strip {
+    chain-length = <27>;
+    pin = <&gpio0 15 GPIO_ACTIVE_HIGH>; // pino típico para Corne com nice!nano, pode precisar trocar para 16
+    status = "okay";
+};
