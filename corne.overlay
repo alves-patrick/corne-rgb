@@ -1,5 +1,15 @@
 &led_strip {
     chain-length = <27>;
-    pin = <&gpio0 15 GPIO_ACTIVE_HIGH>; // pino típico para Corne com nice!nano, pode precisar trocar para 16
+    pin = <&gpio0 15 GPIO_ACTIVE_HIGH>; // pino típico para Corne com nice!nano
+    status = "okay";
+};
+
+&display {
+    compatible = "ssd1306fb";     // driver padrão de OLED (procure confirmar pelo seu modelo, comum nos Corne)
+    label = "OLED";
+    width = <64>;                 // 64 pixels largura (comum em OLED 0.69")
+    height = <32>;                // 32 pixels altura  (comum em OLED 0.69")
+    // Caso seu display precise de pinagem específica, adicione:
+    // reset-gpios = <&gpio0 16 GPIO_ACTIVE_LOW>; // apenas se necessário
     status = "okay";
 };
