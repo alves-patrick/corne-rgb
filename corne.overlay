@@ -7,8 +7,8 @@
 &display {
     compatible = "ssd1306fb";     // driver padrão de OLED (procure confirmar pelo seu modelo, comum nos Corne)
     label = "OLED";
-    width = <64>;                 // 64 pixels largura (comum em OLED 0.69")
-    height = <32>;                // 32 pixels altura  (comum em OLED 0.69")
+    width = <64>;                 // 64 pixels largura (comum em OLED 0.91")
+    height = <32>;                // 32 pixels altura  (comum em OLED 0.91")
     // Caso seu display precise de pinagem específica, adicione:
     // reset-gpios = <&gpio0 16 GPIO_ACTIVE_LOW>; // apenas se necessário
     status = "okay";
